@@ -1,0 +1,9 @@
+telebot
+pyTelegramBotAPI==3.8.3
+SQLAlchemy==1.3.20
+schedule==1.1.0
+psycopg2
+Logbook==1.5.3
+timeloop==1.0.2
+telegram==0.0.1
+numpy==1.19.4

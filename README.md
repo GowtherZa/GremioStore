@@ -1,2 +1,1 @@
-# GremioStore
-Gremio Store's sales bot
+# Maderato Bot
