@@ -214,11 +214,21 @@ def comandos_info():
       return sms
 
 def hacer_sms_producto(producto):
-      sms = f'''```
-{producto.nombre}
+      if producto.precio != 0:
+      
+            sms = f'''```
+      {producto.nombre}
 
-{producto.detalles}
+      {producto.detalles}
 
-Precio: {producto.precio}cup
-                        ```'''
+      Precio: {producto.precio}cup
+                              ```'''
+      else:
+            
+            sms = f'''```
+      {producto.nombre}
+
+      {producto.detalles}
+                              ```'''
+            
       return sms
