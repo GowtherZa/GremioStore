@@ -23,7 +23,7 @@ def init_utils(dev,owner):
         
         utils = Utils(
             dev = dev,
-            categorias = 'Maderatos 🌴 Maceticas 🎍',
+            categorias = ' Llaveros 🔑 Stickers 😁 Eventos 🎎 Estatuillas 🗽',
             p_mostrados = 3,
             owner= owner,
             image_secs = 'Nombre ✍️ Detalles 📋 Precio 💰 Foto 🖼 Regresar ↩️',

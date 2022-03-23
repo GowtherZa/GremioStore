@@ -2,21 +2,28 @@ from telebot import types
 from functions import *
 from models import User
 
-# ☑️ ✅ 🛒 ➡️ ⬅️ ↩️ 💰 Editar *️⃣  Eliminar ❌
+# ☑️ ✅ 🛒 ➡️ ⬅️ ↩️ 💰 Editar *️⃣  Eliminar ❌   🗝 🔑 🗽 😁 🎎
+
 
 def get_botonera_inicial():
       markup = types.ReplyKeyboardMarkup(row_width=2,resize_keyboard=True)
-      maderatosButton = types.KeyboardButton('Maderatos 🌴')
-      maceticasButton = types.KeyboardButton('Maceticas 🎍')
-      markup.row(maderatosButton,maceticasButton)
+      llaverosButton = types.KeyboardButton('Llaveros 🔑')
+      stickersButton = types.KeyboardButton('Stickers 😁')
+      eventosButton = types.KeyboardButton('Eventos 🎎')
+      estatuillasButton = types.KeyboardButton('Estatuillas 🗽')
+      markup.row(llaverosButton,stickersButton)
+      markup.row(estatuillasButton,eventosButton)
       return markup
       
 def get_botonera_admin():
       markup = types.ReplyKeyboardMarkup(row_width=2,resize_keyboard=True)
-      maderatosButton = types.KeyboardButton('Maderatos 🌴')
-      maceticasButton = types.KeyboardButton('Maceticas 🎍')
+      llaverosButton = types.KeyboardButton('Llaveros 🔑')
+      stickersButton = types.KeyboardButton('Stickers 😁')
+      eventosButton = types.KeyboardButton('Eventos 🎎')
+      estatuillasButton = types.KeyboardButton('Estatuillas 🗽')
       agregarButton = types.KeyboardButton("Agregar Producto ➕")
-      markup.row(maderatosButton,maceticasButton)
+      markup.row(llaverosButton,stickersButton)
+      markup.row(estatuillasButton,eventosButton)
       markup.row(agregarButton)
       return markup
 
@@ -83,10 +90,12 @@ def info_producto_para_carrito(nombre,precio,cantidad):
 def get_botonera_cancelar(categorias):
       markup = types.ReplyKeyboardMarkup(row_width=2,resize_keyboard=True)
       if categorias:
-            maderatosButton = types.KeyboardButton('Maderatos 🌴')
-            maceticasButton = types.KeyboardButton('Maceticas 🎍')
+            llaverosButton = types.KeyboardButton('Llaveros 🔑')
+            stickersButton = types.KeyboardButton('Stickers 😁')
+            eventosButton = types.KeyboardButton('Eventos 🎎')
+            estatuillasButton = types.KeyboardButton('Estatuillas 🗽')
             cancelarButton = types.KeyboardButton('Cancelar ↩️')
-            markup.add(maderatosButton, maceticasButton,cancelarButton)
+            markup.add(llaverosButton,stickersButton,estatuillasButton,eventosButton,cancelarButton)
       else:
             cancelarButton = types.KeyboardButton('Cancelar ↩️')
             markup.add(cancelarButton)
@@ -184,7 +193,7 @@ def get_inline_b(producto,user,len,cantidad,index,admin):
 
 def welcome_message():
       return '''```
-      Hola! Bienvenido al bot no oficial y de pruebas de maderato!
+      Hola! Bienvenido al bot no oficial y de pruebas de Gremio Store!
     ```'''
 
 def comandos_info():
