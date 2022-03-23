@@ -1,7 +1,7 @@
 from telebot import types
 from functions import *
 from models import User
-import numpy as np
+
 # ☑️ ✅ 🛒 ➡️ ⬅️ ↩️ 💰 Editar *️⃣  Eliminar ❌
 
 def get_botonera_inicial():
