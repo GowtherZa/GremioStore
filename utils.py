@@ -11,8 +11,10 @@ def get_botonera_inicial():
       stickersButton = types.KeyboardButton('Stickers 😁')
       eventosButton = types.KeyboardButton('Eventos 🎎')
       estatuillasButton = types.KeyboardButton('Estatuillas 🗽')
+      carritoButton = types.KeyboardButton("Carrito 🛒")
       markup.row(llaverosButton,stickersButton)
       markup.row(estatuillasButton,eventosButton)
+      markup.row(carritoButton)
       return markup
       
 def get_botonera_admin():

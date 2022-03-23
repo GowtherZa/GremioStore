@@ -481,7 +481,6 @@ A continuacion los productos de su carrito:
                     intro_a =f'''```
 El usuario @{user.alias} - {user.tg_id} desea hacer
 una compra.
-A continuacion los productos de su carrito:
                 ```'''
 
                 else:
