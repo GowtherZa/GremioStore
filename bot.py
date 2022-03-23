@@ -488,10 +488,10 @@ A continuacion los productos de su carrito:
                     intro_a =f'''```
 El usuario {user.tg_id} desea hacer
 una compra.
-A continuacion los productos de su carrito:
                 ```'''
 
                 intro_c = '''```
+A continuacion los productos de su carrito:
                 ```'''
 
                 sms = f'''```
