@@ -492,7 +492,6 @@ A continuacion los productos de su carrito:
                 ```'''
 
                 intro_c = '''```
-A continuacion los productos de su carrito:
                 ```'''
 
                 sms = f'''```
